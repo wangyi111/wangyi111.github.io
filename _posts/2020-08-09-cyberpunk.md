@@ -1,5 +1,5 @@
 ---
-title: '五部代表作入坑赛博朋克'
+title: '赛博朋克入坑指南'
 permalink: /posts/2020/08/cyberpunk/
 categories: 杂谈
 tags:
