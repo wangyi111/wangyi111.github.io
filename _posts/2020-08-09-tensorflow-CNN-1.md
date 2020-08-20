@@ -5,6 +5,9 @@ categories: programming
 tags:
   - tensorflow
   - convolutional neural network
+  - image data augmentation
+toc: true
+toc_label: "CONTENT"
 ---
 
 
