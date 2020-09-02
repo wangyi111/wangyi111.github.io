@@ -1,5 +1,5 @@
 ---
-title: 'Tensorflow in Practice: Time Sequences (P2)'
+title: 'Tensorflow: Time Sequences (P2)'
 permalink: /posts/2020/08/tensorflow-time-sequence-2/
 categories: programming
 tags:

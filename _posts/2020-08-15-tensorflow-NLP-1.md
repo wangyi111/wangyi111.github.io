@@ -1,5 +1,5 @@
 ---
-title: 'Tensorflow in Practice: Natural Language Processing (P1)'
+title: 'Tensorflow: Natural Language Processing (P1)'
 permalink: /posts/2020/08/tensorflow-nlp-1/
 categories: programming
 tags:

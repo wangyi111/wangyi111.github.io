@@ -1,5 +1,5 @@
 ---
-title: 'Tensorflow in Practice: Convolutional Neural Network (P2) '
+title: 'Tensorflow: Convolutional Neural Network (P2) '
 permalink: /posts/2020/08/tensorflow-cnn-2/
 categories: programming
 tags:
