@@ -2,8 +2,7 @@
 title: "Integrated Fieldwork"
 excerpt: "An integrated fieldwork in the Geoengine master program."
 header:
-  image: /assets/images/Integrated_Fieldwork/field.png
-  teaser: /assets/images/Integrated_Fieldwork/dsm.png
+  teaser: /assets/images/portfolio/Integrated_Fieldwork/field.png
 sidebar:
   - title: "People"
     image: http://placehold.it/350x250

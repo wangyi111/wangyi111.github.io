@@ -2,11 +2,10 @@
 title: "3D Statue Modelling "
 excerpt: "Model and print a statue in the park with a Gopro camera."
 header:
-  image: /assets/images/portfolio/3Dstatue/printed_model-th.jpg
-  teaser: /assets/images/portfolio/3Dstatue/statue-logo.jpg
+  teaser: /assets/images/portfolio/3Dstatue/printed_model-th.jpg
 sidebar:
   - title: "Statue to be modeled"
-    image: http://placehold.it/350x250
+    image: /assets/images/portfolio/3Dstatue/statue-logo.jpg
     image_alt: "statue"
   - title: "People"
     text: "Yi Wang & Yi Wei"

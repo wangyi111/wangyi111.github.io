@@ -2,7 +2,6 @@
 title: "Radar SLAM"
 excerpt: "Realtime localization and mapping based on radar point clouds."
 header:
-  image: /assets/images/portfolio/RadarSLAM/parkinglot.png
   teaser: /assets/images/portfolio/RadarSLAM/parkinglot.png
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
