@@ -2,8 +2,8 @@
 title: "3D Statue Modelling "
 excerpt: "Model and print a statue in the park with a Gopro camera."
 header:
-  image: /assets/images/foo-bar-identity.jpg
-  teaser: /assets/images/foo-bar-identity-th.jpg
+  image: /assets/images/portfolio/3Dstatue/printed_model-th.jpg
+  teaser: /assets/images/portfolio/3Dstatue/statue-logo.jpg
 sidebar:
   - title: "Statue to be modeled"
     image: http://placehold.it/350x250
@@ -22,5 +22,7 @@ gallery:
     alt: "placeholder image 3"
 ---
 
-A placeholder for the seminar project "3d statue modelling" in the Geoengine master program.
+This is a placeholder for the project *3D statue modelling*.
+
+{% include gallery caption="This is a sample gallery to go along with this case study." %}
 

@@ -2,8 +2,8 @@
 title: "Integrated Fieldwork"
 excerpt: "An integrated fieldwork in the Geoengine master program."
 header:
-  image: /assets/images/foo-bar-identity.jpg
-  teaser: /assets/images/foo-bar-identity-th.jpg
+  image: /assets/images/Integrated_Fieldwork/field.png
+  teaser: /assets/images/Integrated_Fieldwork/dsm.png
 sidebar:
   - title: "People"
     image: http://placehold.it/350x250
@@ -23,5 +23,7 @@ gallery:
     alt: "placeholder image 3"
 ---
 
-A placeholder for the integrated fieldwork in the Geoengine master program.
+This is a placeholder for the project *Integrated Fieldwork*.
+
+{% include gallery caption="This is a sample gallery to go along with this case study." %}
 
