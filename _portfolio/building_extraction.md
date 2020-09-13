@@ -2,8 +2,7 @@
 title: "Building Extraction"
 excerpt: "Building extraction from remote sensing images with deep neural networks."
 header:
-  image: /assets/images/portfolio/top_mosaic_09cm_area1.png
-  teaser: /assets/images/top_mosaic_09cm_area1.png
+  teaser: /assets/images/top_mosaic_09cm_area1-th.png
 
 gallery:
   - url: /assets/images/unsplash-gallery-image-1.jpg
