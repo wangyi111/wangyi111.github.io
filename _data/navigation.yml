@@ -6,7 +6,7 @@ main:
     url: /publications/
   - title: "Blog"
     url: /posts/
-  - title: "Portfolio"
+  - title: "Projects"
     url: /portfolio/
   - title: "CV"
     url: /cv/
