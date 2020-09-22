@@ -8,8 +8,8 @@ classes: wide
 
 Education
 -----
-* M.S. in Geomatics Engineering, University of Stuttgart, 2020
-* B.S. in Remote Sensing Science and Technology, Wuhan University, 2018
+* M.S. in Geomatics Engineering, University of Stuttgart, 2018-
+* B.S. in Remote Sensing Science and Technology, Wuhan University, 2014-2018
 
 Work experience
 -----
@@ -25,8 +25,8 @@ Work experience
 Interests
 -----
 * Remote Sensing & Photogrammetry
-* SLAM & autonomous navigation
 * Computer Vision & Machine Learning
+* SLAM & Navigation
 
 Publications
 -----
