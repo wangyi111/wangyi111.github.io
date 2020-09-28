@@ -5,15 +5,12 @@ header:
   teaser: /assets/images/portfolio/building_extraction/top_mosaic_09cm_area1-th.png
 
 gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
+  - url: /assets/images/portfolio/building_extraction/example_img.png
+    image_path: assets/images/portfolio/building_extraction/example_img.png
     alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
+  - url: /assets/images/portfolio/building_extraction/example_label.png
+    image_path: assets/images/portfolio/building_extraction/example_label.png
     alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
-    alt: "placeholder image 3"
 ---
 
 This is a placeholder for the project *building extraction*.

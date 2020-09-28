@@ -3,23 +3,19 @@ title: "Integrated Fieldwork"
 excerpt: "An integrated fieldwork in the Geoengine master program."
 header:
   teaser: /assets/images/portfolio/Integrated_Fieldwork/field.png
-sidebar:
-  - title: "People"
-    image: http://placehold.it/350x250
-    image_alt: "logo"
-    text: "Geoengine&GuG students & supervisors"
-  - title: "Time&place"
-    text: "2019.7-8 Huelben"
 gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
+  - url: /assets/images/portfolio/Integrated_Fieldwork/field.png
+    image_path: assets/images/portfolio/Integrated_Fieldwork/field.png
     alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
+  - url: /assets/images/portfolio/Integrated_Fieldwork/dsm.png
+    image_path: assets/images/portfolio/Integrated_Fieldwork/dsm.png
     alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
+  - url: /assets/images/portfolio/Integrated_Fieldwork/plane.png
+    image_path: assets/images/portfolio/Integrated_Fieldwork/plane.png
     alt: "placeholder image 3"
+  - url: /assets/images/portfolio/Integrated_Fieldwork/plane_model.jpg
+    image_path: assets/images/portfolio/Integrated_Fieldwork/plane_model.jpg
+    alt: "placeholder image 4"
 ---
 
 This is a placeholder for the project *Integrated Fieldwork*.

@@ -1,9 +1,10 @@
 ---
-title: "Test portfolio"
-excerpt: "Foo Bar design system including logo mark, website design, and branding applications."
+title: "Test Project"
+excerpt: "This is a test project."
 header:
   image: /assets/images/foo-bar-identity.jpg
   teaser: /assets/images/foo-bar-identity-th.jpg
+author_profile: false
 sidebar:
   - title: "Role"
     image: http://placehold.it/350x250
@@ -23,8 +24,6 @@ gallery:
     alt: "placeholder image 3"
 ---
 
-This is a test portfolio.
+This is a test project.
 
 {% include gallery caption="This is a sample gallery to go along with this case study." %}
-
-To be deleted later.

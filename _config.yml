@@ -119,7 +119,7 @@ author:
       # url: "https://instagram.com/"
     - label: goolescholar
       icon: "fas fa-fw fa-graduation-cap"
-      url: "https://scholar.google.com/this-is-a-test"
+      # url: "https://scholar.google.com/this-is-a-test"
 
 # Site Footer
 footer:
@@ -314,3 +314,4 @@ defaults:
       layout: single
       share: true
       comments: true
+      author_profile: true

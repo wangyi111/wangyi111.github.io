@@ -4,14 +4,14 @@ excerpt: "Realtime localization and mapping based on radar point clouds."
 header:
   teaser: /assets/images/portfolio/RadarSLAM/parkinglot.png
 gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
+  - url: /assets/images/portfolio/RadarSLAM/parkinglot.png
+    image_path: assets/images/portfolio/RadarSLAM/parkinglot.png
     alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
+  - url: /assets/images/portfolio/RadarSLAM/workflow.png
+    image_path: assets/images/portfolio/RadarSLAM/workflow.png
     alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
+  - url: /assets/images/portfolio/RadarSLAM/NDT.png
+    image_path: assets/images/portfolio/RadarSLAM/NDT.png
     alt: "placeholder image 3"
 ---
 

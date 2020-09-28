@@ -3,21 +3,15 @@ title: "3D Statue Modelling "
 excerpt: "Model and print a statue in the park with a Gopro camera."
 header:
   teaser: /assets/images/portfolio/3Dstatue/printed_model-th.jpg
-sidebar:
-  - title: "Statue to be modeled"
-    image: /assets/images/portfolio/3Dstatue/statue-logo.jpg
-    image_alt: "statue"
-  - title: "People"
-    text: "Yi Wang & Yi Wei"
 gallery:
-  - url: /assets/images/unsplash-gallery-image-1.jpg
-    image_path: assets/images/unsplash-gallery-image-1-th.jpg
+  - url: /assets/images/portfolio/3Dstatue/statue.jpg
+    image_path: assets/images/portfolio/3Dstatue/statue.jpg
     alt: "placeholder image 1"
-  - url: /assets/images/unsplash-gallery-image-2.jpg
-    image_path: assets/images/unsplash-gallery-image-2-th.jpg
+  - url: /assets/images/portfolio/3Dstatue/images.png
+    image_path: assets/images/portfolio/3Dstatue/images.png
     alt: "placeholder image 2"
-  - url: /assets/images/unsplash-gallery-image-3.jpg
-    image_path: assets/images/unsplash-gallery-image-3-th.jpg
+  - url: /assets/images/portfolio/3Dstatue/printed_model.jpg
+    image_path: assets/images/portfolio/3Dstatue/printed_model.jpg
     alt: "placeholder image 3"
 ---
 
