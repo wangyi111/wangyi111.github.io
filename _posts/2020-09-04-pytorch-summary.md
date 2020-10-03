@@ -824,12 +824,12 @@ labels = labels.to(device) # 或者  labels = labels.cuda() if torch.cuda.is_ava
 
 ## 04: Save and Use Model
 
-使用保存参数方式保存Pytorch模型。
+### 4-1: 保存模型参数
 
 ```python
 print(model.state_dict().keys()) # 查看要保存的参数
 # 保存模型参数
-torch.save(model.state_dict(), "./data/model_parameter.pkl")
+torch.save(model.state_dict(), "./data/model_parameter.pt")
 ```
 
 ```
@@ -839,7 +839,7 @@ odict_keys(['conv1.weight', 'conv1.bias', 'conv2.weight', 'conv2.bias', 'linear1
 ```python
 # 导入模型参数
 net_clone = Net()
-net_clone.load_state_dict(torch.load("./data/model_parameter.pkl"))
+net_clone.load_state_dict(torch.load("./data/model_parameter.pt"))
 ```
 
 ```python
@@ -852,6 +852,64 @@ def predict(model,dl):
     
 predict(net_clone,dl_valid)
 ```
+### 4-2: 保存完整模型
 
+以 Python `pickle 模块的方式来保存模型。这种方法的缺点是序列化数据受 限于某种特殊的类而且需要确切的字典结构。这是因为pickle无法保存模型类本身。相反，它保存包含类的文件的路径，该文件在加载时使用。 因此，当在其他项目使用或者重构之后，您的代码可能会以各种方式中断。
+```python
+# 保存模型
+torch.save(model, PATH)
 
+# 加载模型
+# 模型类必须在此之前被定义
+model = torch.load(PATH)
+model.eval()
+```
+### 4-3: 保存和恢复训练
 
+PyTorch 中常见的保存 checkpoint 是使用 .tar 文件扩展名。
+
+要加载项目，首先需要初始化模型和优化器，然后使用torch.load()来加载本地字典。
+```python
+torch.save({
+            'epoch': epoch,
+            'modelA_state_dict': modelA.state_dict(),
+            'modelB_state_dict': modelB.state_dict(),
+            'optimizerA_state_dict': optimizerA.state_dict(),
+            'optimizerB_state_dict': optimizerB.state_dict(),
+            'loss': loss,
+            ...
+            }, PATH)
+```
+
+```python
+model = TheModelClass(*args, **kwargs)
+optimizer = TheOptimizerClass(*args, **kwargs)
+
+checkpoint = torch.load(PATH)
+modelA.load_state_dict(checkpoint['modelA_state_dict'])
+modelB.load_state_dict(checkpoint['modelB_state_dict'])
+optimizerA.load_state_dict(checkpoint['optimizerA_state_dict'])
+optimizerB.load_state_dict(checkpoint['optimizerB_state_dict'])
+
+epoch = checkpoint['epoch']
+loss = checkpoint['loss']
+
+modelA.eval()
+modelB.eval()
+# - or -
+modelA.train()
+modelB.train()
+```
+
+在迁移学习或训练新的复杂模型时，部分加载模型或加载部分模型是常见的情况。利用训练好的参数，有助于**热启动**训练过程，并希望帮助你的模型比从头开始训练能够更快地收敛。
+
+无论是从缺少某些键的 state_dict 加载还是从键的数目多于加载模型的 state_dict , 都可以通过在`load_state_dict()`函数中将`strict`参数设置为 False 来忽略非匹配键的函数。
+
+如果要将参数从一个层加载到另一个层，但是某些键不匹配，主要修改正在加载的 state_dict 中的参数键的名称以匹配要在加载到模型中的键即可。
+```python
+# save
+torch.save(modelA.state_dict(), PATH)
+
+modelB = TheModelBClass(*args, **kwargs)
+modelB.load_state_dict(torch.load(PATH), strict=False)
+```

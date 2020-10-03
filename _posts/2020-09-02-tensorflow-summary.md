@@ -21,7 +21,7 @@ Among these methods, the most popular ones are: numpy array, pandas DataFrame an
 ### 1-1: Numpy Array
 
 
-```
+```python
 import tensorflow as tf
 import numpy as np 
 from sklearn import datasets 
@@ -42,7 +42,7 @@ for features,label in ds1.take(5):
 ### 1-2: Pandas dataframe
 
 
-```
+```python
 from sklearn import datasets 
 import pandas as pd
 
@@ -62,7 +62,7 @@ for features,label in ds2.take(3):
 ### 1-3: Python generator
 
 
-```
+```python
 import tensorflow as tf
 from matplotlib import pyplot as plt 
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
@@ -85,7 +85,7 @@ ds3 = tf.data.Dataset.from_generator(generator,output_types=(tf.float32,tf.int32
 ```
 
 
-```
+```python
 %matplotlib inline
 %config InlineBackend.figure_format = 'svg'
 plt.figure(figsize=(6,6)) 
@@ -101,7 +101,7 @@ plt.show()
 ### 1-4: csv
 
 
-```
+```python
 ds4 = tf.data.experimental.make_csv_dataset(
       file_pattern = ["../data/titanic/train.csv","../data/titanic/test.csv"],
       batch_size=3, 
@@ -117,7 +117,7 @@ for data,label in ds4.take(2):
 ### 1-5: txt
 
 
-```
+```python
 ds5 = tf.data.TextLineDataset(
     filenames = ["../data/titanic/train.csv","../data/titanic/test.csv"]
     ).skip(1) # Omitting the header on the first line
@@ -129,14 +129,14 @@ for line in ds5.take(5):
 ### 1-6: file path
 
 
-```
+```python
 ds6 = tf.data.Dataset.list_files("../data/cifar2/train/*/*.jpg")
 for file in ds6.take(5):
     print(file)
 ```
 
 
-```
+```python
 from matplotlib import pyplot as plt 
 def load_image(img_path,size = (32,32)):
     label = 1 if tf.strings.regex_full_match(img_path,".*/automobile/.*") else 0
@@ -160,7 +160,7 @@ for i,(img,label) in enumerate(ds6.map(load_image).take(2)):
 For the data pipeline with tfrecords file it is a little bit complicated, as we have to first create tfrecords file, and then read it to tf.data.dataset.
 
 
-```
+```python
 import os
 import numpy as np
 
@@ -187,7 +187,7 @@ create_tfrecords("../data/cifar2/test/","../data/cifar2_test.tfrecords/")
 ```
 
 
-```
+```python
 from matplotlib import pyplot as plt 
 
 def parse_example(proto):
@@ -204,7 +204,7 @@ ds7 = tf.data.TFRecordDataset("../data/cifar2_test.tfrecords").map(parse_example
 ```
 
 
-```
+```python
 %matplotlib inline
 %config InlineBackend.figure_format = 'svg'
 plt.figure(figsize=(6,6)) 
@@ -260,7 +260,7 @@ Modeling through child class of `Model` should be AVOIDED unless with special re
 ### 2-1: Sequential
 
 
-```
+```python
 tf.keras.backend.clear_session()
 
 model = models.Sequential()
@@ -283,7 +283,7 @@ model.summary()
 ### 2-2: functional API
 
 
-```
+```python
 tf.keras.backend.clear_session()
 
 inputs = layers.Input(shape=[MAX_LEN])
@@ -319,7 +319,7 @@ model.summary()
 ### 2-3: Customized Modeling Using Child Class of Model
 
 
-```
+```python
 # Define a customized residual module as Layer
 
 class ResBlock(layers.Layer):
@@ -353,7 +353,7 @@ class ResBlock(layers.Layer):
 ```
 
 
-```
+```python
 # Customized model, which could also be implemented by Sequential or Functional API
 
 class ImdbModel(models.Model):
@@ -377,7 +377,7 @@ class ImdbModel(models.Model):
 ```
 
 
-```
+```python
 tf.keras.backend.clear_session()
 
 model = ImdbModel()
@@ -400,7 +400,7 @@ Note: fit_generator method is not recommended in tf.keras since it has been merg
 build model -> compile model -> train model
 
 
-```
+```python
 model = create_model() # create model using methods listed above
 model.compile(optimizer=optimizers.Nadam(),loss=losses.SparseCategoricalCrossentropy(),metrics=['accuracy']) # compile model
 
@@ -415,13 +415,13 @@ history = model.fit(ds_train,validation_data = ds_test,epochs = 10,callbacks=[te
 This pre-defined method allows fine-controlling to the training procedure for each batch without the callbacks, which is even more flexible than fit method.
 
 
-```
+```python
 model = create_model() # create model using methods listed above
 model.compile(optimizer=optimizers.Nadam(),loss=losses.SparseCategoricalCrossentropy(),metrics=['accuracy']) # compile model
 ```
 
 
-```
+```python
 def train_model(model,ds_train,ds_valid,epoches):
 
     for epoch in tf.range(1,epoches+1):
@@ -447,7 +447,7 @@ def train_model(model,ds_train,ds_valid,epoches):
 ```
 
 
-```
+```python
 train_model(model,ds_train,ds_test,10)
 ```
 
@@ -456,7 +456,7 @@ train_model(model,ds_train,ds_test,10)
 Re-compilation of the model is not required in the customized training loop, just back-propagate the iterative parameters through the optimizer according to the loss function, which gives us the highest flexibility.
 
 
-```
+```python
 optimizer = optimizers.Nadam()
 loss_func = losses.SparseCategoricalCrossentropy()
 
@@ -511,18 +511,65 @@ def train_model(model,ds_train,ds_valid,epochs):
 ```
 
 
-```
+```python
 train_model(model,ds_train,ds_test,10)
+```
+
+### 3-4: Use GPU
+Tensorflow uses GPU by default, but to control the usage of GPUs we need to add some codes.
+
+1, Set GPU and memory.
+```python
+gpus = tf.config.list_physical_devices("GPU")
+
+if gpus:
+    gpu0 = gpus[0] #如果有多个GPU，仅使用第0个GPU
+    tf.config.experimental.set_memory_growth(gpu0, True) #设置GPU显存用量按需使用
+    # 或者也可以设置GPU显存为固定使用量(例如：4G)
+    #tf.config.experimental.set_virtual_device_configuration(gpu0,
+    #    [tf.config.experimental.VirtualDeviceConfiguration(memory_limit=4096)]) 
+    tf.config.set_visible_devices([gpu0],"GPU") 
+```
+2, Use multiple GPUs with MirroredStrategy().
+
+MirroredStrategy过程简介：
+* 训练开始前，该策略在所有 N 个计算设备上均各复制一份完整的模型；
+* 每次训练传入一个批次的数据时，将数据分成 N 份，分别传入 N 个计算设备（即数据并行）；
+* N 个计算设备使用本地变量（镜像变量）分别计算自己所获得的部分数据的梯度；
+* 使用分布式计算的 All-reduce 操作，在计算设备间高效交换梯度数据并进行求和，使得最终每个设备都有了所有设备的梯度之和；
+* 使用梯度求和的结果更新本地变量（镜像变量）；
+* 当所有设备均更新本地变量后，进行下一轮训练（即该并行策略是同步的）。
+```python
+#增加以下两行代码
+strategy = tf.distribute.MirroredStrategy()  
+with strategy.scope(): 
+    model = create_model()
+    model.summary()
+    model = compile_model(model)
+    
+history = model.fit(ds_train,validation_data = ds_test,epochs = 10)  
+```
+3, Use colab TPU.
+```python
+#增加以下6行代码
+import os
+resolver = tf.distribute.cluster_resolver.TPUClusterResolver(tpu='grpc://' + os.environ['COLAB_TPU_ADDR'])
+tf.config.experimental_connect_to_cluster(resolver)
+tf.tpu.experimental.initialize_tpu_system(resolver)
+strategy = tf.distribute.experimental.TPUStrategy(resolver)
+with strategy.scope():
+    model = create_model()
+    model.summary()
+    model = compile_model(model)
 ```
 
 ## 04: Save and use model
 
-4-1. Save the whole model, including the model's architecture, weight values, training config, optimizer and its states.
+### 4-1: Save the whole model
 
+Save the whole model, including the model's architecture, weight values, training config, optimizer and its states (useful for web/mobile usage).
 
-
-
-```
+```python
 # save model as h5 file
 model.save('mymodel.h5')
 
@@ -531,7 +578,7 @@ new_model = tf.keras.models.load_model('mymodel.h5')
 ```
 
 
-```
+```python
 # save model as SavedModel (recommended)
 model.save('tf_model_savedmodel', save_format="tf")
 
@@ -539,29 +586,31 @@ model.save('tf_model_savedmodel', save_format="tf")
 new_model = tf.keras.models.load_model('tf_model_savedmodel')
 ```
 
-4-2. Save model's architecture and weights.
+### 4-2: Save model's architecture and weights
 
-
-```
+```python
 # save model's architecture
 json_config = model.to_json()
 with open('model_config.json','w') as json_file:
   json_file.write(json_config)
+
 # save model's weights
 #model.save_weights('model_weights.h5')
+#model.save_weights('./checkpoints/my_checkpoint')
 model.save_weights('model_weights',save_format='tf')
+
 # load model
 with open('model_config.json') as json_file:
   json_config = json_file.read()
 new_model = tf.keras.models.model_from_json(json_config)
 #new_model.load_weights('model_weights.h5')
+#new_model.load_weights('./checkpoints/my_checkpoint')
 new_model.load_weights('model_weights')
 ```
 
 Note: If the training process is customized (i.e. not using ```model.fit```), we should set model's input shape before training.
 
-
-```
+```python
 # create model
 model = KeypointNetwork()  
 
@@ -578,3 +627,87 @@ for epoch in range(1,epochs+1):
 # save model
 model.save('./model-weights/checkpoint_weights',save_format='tf')
 ```
+
+### 4-3: Save weights while training
+
+You can use a trained model without having to retrain it, or pick-up training where you left off in case the training process was interrupted. The `tf.keras.callbacks.ModelCheckpoint` callback allows you to continually save the model both during and at the end of training.
+
+Create a `tf.keras.callbacks.ModelCheckpoint` callback that saves weights only during training:
+
+```python
+checkpoint_path = "training_1/cp.ckpt"
+checkpoint_dir = os.path.dirname(checkpoint_path)
+
+# Create a callback that saves the model's weights
+cp_callback = tf.keras.callbacks.ModelCheckpoint(filepath=checkpoint_path,
+                                                 save_weights_only=True,
+                                                 verbose=1)
+
+# Train the model with the new callback
+model.fit(train_images, 
+          train_labels,  
+          epochs=10,
+          validation_data=(test_images,test_labels),
+          callbacks=[cp_callback])  # Pass callback to training
+# This creates a single collection of TensorFlow checkpoint files that are updated at the end of each epoch.
+
+# This may generate warnings related to saving the state of the optimizer.
+# These warnings (and similar warnings throughout this notebook)
+# are in place to discourage outdated usage, and can be ignored.
+```
+
+Then load saved weights and evaluate on a new model:
+```python
+# Loads the weights
+model.load_weights(checkpoint_path)
+
+# Re-evaluate the model
+loss,acc = model.evaluate(test_images,  test_labels, verbose=2)
+print("Restored model, accuracy: {:5.2f}%".format(100*acc))
+```
+
+The callback provides several options to provide unique names for checkpoints and adjust the checkpointing frequency.
+
+Train a new model, and save uniquely named checkpoints once every five epochs:
+```python
+# Include the epoch in the file name (uses `str.format`)
+checkpoint_path = "training_2/cp-{epoch:04d}.ckpt"
+checkpoint_dir = os.path.dirname(checkpoint_path)
+
+# Create a callback that saves the model's weights every 5 epochs
+cp_callback = tf.keras.callbacks.ModelCheckpoint(
+    filepath=checkpoint_path, 
+    verbose=1, 
+    save_weights_only=True,
+    period=5)
+
+# Create a new model instance
+model = create_model()
+
+# Save the weights using the `checkpoint_path` format
+model.save_weights(checkpoint_path.format(epoch=0))
+
+# Train the model with the new callback
+model.fit(train_images, 
+          train_labels,
+          epochs=50, 
+          callbacks=[cp_callback],
+          validation_data=(test_images,test_labels),
+          verbose=0)
+```
+Now load the latest checkpoint to test:
+```python
+# Create a new model instance
+model = create_model()
+# Load the previously saved weights
+latest = tf.train.latest_checkpoint(checkpoint_dir)
+model.load_weights(latest)
+# Re-evaluate the model
+loss, acc = model.evaluate(test_images,  test_labels, verbose=2)
+print("Restored model, accuracy: {:5.2f}%".format(100*acc))
+```
+
+The above code stores the weights to a collection of checkpoint-formatted files that contain only the trained weights in a binary format. Checkpoints contain:
+* One or more shards that contain your model's weights.
+* An index file that indicates which weights are stored in which shard.
+If you are training a model on a single machine, you'll have one shard with the suffix: `.data-00000-of-00001`.
