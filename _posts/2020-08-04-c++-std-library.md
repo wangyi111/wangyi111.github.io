@@ -333,6 +333,7 @@ while (cin >> first >> second)
 #include <algorithm>    // std::sort
 ```
 这里介绍sort示例：
+```c++
 bool myfunction (int i,int j) { return (i<j); }
 
   // using function as comp
