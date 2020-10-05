@@ -1,28 +1,28 @@
 ---
-title: 'C++标准库常用数据结构和算法（转）'
+title: 'c++标准库常用数据结构和算法（转）'
 permalink: /posts/2020/08/c++-std-library/
 categories: programming
 tags:
-  - C++
+  - c++
   - stl
 toc: true
 toc_label: "CONTENT"
 ---
 
-本文整理了C++标准库STL常用的数据结构和算法，统一使用命名空间std，原文参考https://blog.ailemon.me/2019/03/29/cpp-stl-library-summary/。
+本文整理了c++标准库STL常用的数据结构和算法，统一使用命名空间std，原文参考https://blog.ailemon.me/2019/03/29/cpp-stl-library-summary/。
 
-```C++
+```c++
 using namespace std;
 ```
 
 ## Vector
 
 vector类似于平时使用的数组类型，只不过，封装了很多常用的函数，并且长度是可变的。
-```C++
+```c++
 #include <vector>
 ```
 示例：
-```C++
+```c++
 vector<int> a;
 
 //向vector的末尾添加元素
@@ -114,7 +114,7 @@ cout <<endl;
 
 ## Stack
 
-```C++
+```c++
 #include <stack>
 ```
 
@@ -130,7 +130,7 @@ stack 的基本操作有：
 * 访问栈中的元素个数，如例：s.size()。
 
 示例：
-```C++
+```c++
 stack<int> a;
 //入栈操作
 a.push(1);
@@ -154,7 +154,7 @@ if(!a.empty()) cout << "栈不为空" << endl;
 
 与stack 模板类很相似，queue 模板类也需要两个模板参数，一个是元素类型，一个容器类型，元素类型是必要的，容器类型是可选的，默认为deque 类型。
 
-```C++
+```c++
 #include <queue>
 ```
 
@@ -168,7 +168,7 @@ queue 的基本操作有：
 * 判断队列空，如例：q.empty()，当队列空时，返回true。
 * 访问队列中的元素个数，如例：q.size()
 
-```C++
+```c++
 queue<int> a;
 //插入元素
 a.push(2);
@@ -197,16 +197,16 @@ cout << a.size() << endl;
 
 优先队列和队列中的操作指令基本上类似，不过，优先队列是通过堆来实现的。
 
-```C++
+```c++
 #include <queue>
 ```
 
 优先队列是默认大的数在前面，若是想定义小的数在前面只需要像下面这样定义即可：
-```C++
+```c++
 priority_queue<int,vector<int>,greater<int>> a;
 ```
 示例：
-```C++
+```c++
 priority_queue<int> a;
 //插入元素
 a.push(2);
@@ -231,11 +231,11 @@ cout << a.size() << endl;
 
 ## Set
 
-```C++
+```c++
 #include <set>
 ```
 示例：
-```C++
+```c++
 set<int> s;
 s.insert(1);
 s.insert(3);
@@ -265,11 +265,11 @@ for(it=s.begin();it!=s.end();it++){
 
 ## Map
 
-```C++
+```c++
 #include <map>
 ```
 示例：
-```C++
+```c++
 map<int,const char *> m;
 
 //插入元素
@@ -299,7 +299,7 @@ for(it = m.begin();it!=m.end();it++)
 ## Pair
 
 1，初始化：
-```C++
+```c++
 pair<string, string> anon;//调用默认构造函数来初始化
 pair<string, int> word_count;
 pair<string, vector<int>> line;
@@ -309,7 +309,7 @@ typedef pair<string, string> Author;
 Author product("marcel", "Product");
 ```
 2，pair对象的操作，支持== 、< ，first、second成员的访问：
-```C++
+```c++
 string firstbook;
 if (author.first == "jim" && author.second == "weshon")
 {
@@ -317,7 +317,7 @@ if (author.first == "jim" && author.second == "weshon")
 }
 ```
 3，生成新的pair对象：
-```C++
+```c++
 pair<string, string> next_author;
 string first, second;
 while (cin >> first >> second)
@@ -329,7 +329,7 @@ while (cin >> first >> second)
 
 ## Algorithm
 
-```C++
+```c++
 #include <algorithm>    // std::sort
 ```
 这里介绍sort示例：
