@@ -3,7 +3,6 @@ title: "Building Extraction"
 excerpt: "Building extraction from remote sensing images with deep neural networks."
 header:
   teaser: /assets/images/portfolio/building_extraction/top_mosaic_09cm_area1-th.png
-
 gallery:
   - url: /assets/images/portfolio/building_extraction/ortho.jpg
     image_path: assets/images/portfolio/building_extraction/ortho.jpg
@@ -11,6 +10,8 @@ gallery:
   - url: /assets/images/portfolio/building_extraction/result.png
     image_path: assets/images/portfolio/building_extraction/result.png
     alt: "example_result"
+toc: true
+toc_label: "CONTENT"
 ---
 
 In this project, we focus on machine-learned building extraction from optical remote sensing images (RGB). We implemented 4 different methods: simple DNN, fully convolutional network, U-Net and modified U-Net, the last of which giving best segmentation result.
