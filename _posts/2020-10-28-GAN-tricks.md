@@ -8,6 +8,8 @@ toc: true
 toc_label: "CONTENT"
 ---
 
+In this blog, we make a brief summary of original GAN's problems and introduce several methods to improve training.
+
 ## 01: GAN's problem
 
 Generally, GAN is a minimax problem:
