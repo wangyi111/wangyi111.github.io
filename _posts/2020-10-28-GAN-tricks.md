@@ -160,7 +160,7 @@ For the IPM loss family like WGAN, there's a K-Lipschitz constraint, which is de
 
 Progressive training strategy, train first small size or coarse image, and step-by-step go to fine level.
 
-## 03: References
+## References
 
 (to be completed.)
 
