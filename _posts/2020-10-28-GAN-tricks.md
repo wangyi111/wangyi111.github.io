@@ -8,6 +8,8 @@ toc: true
 toc_label: "CONTENT"
 ---
 
+In this blog, we make a brief summary of original GAN's problems and introduce several methods to improve training.
+
 ## 01: GAN's problem
 
 Generally, GAN is a minimax problem[1]:
@@ -146,10 +148,10 @@ Some other GAN losses like LeastSquare[16] and Hinge loss[17,18] are also useful
 |       | $$L_{G}^{L S G A N}=E\left[(D(G(z))-1)^{2}\right]$$ |
 | WGAN | $$L_{D}^{W G A N}=E[D(x)]-E[D(G(z))]$$ |
 |      | $$L_{G}^{W G A N}=E[D(G(z))]$$ |
-| WGAN-GP | $$\left.L_{D}^{W G A N_{-} G P}=L_{D}^{W G A N}+\lambda E[(\mid \nabla D(\alpha x+(1-\alpha) G(z))) \mid-1)^{2}\right]$$ |
-|         | $$\left.L_{G}^{W G A N_{-} G P}=L_{G}^{W G A N}$$ |
+| WGAN-GP | $$L_{D}^{W G A N_{-} G P}=L_{D}^{W G A N}+\lambda E[(\mid \nabla D(\alpha x+(1-\alpha) G(z))) \mid-1)^{2}]$$ |
+|         | $$L_{G}^{W G A N_{-} G P}=L_{G}^{W G A N}$$ |
 | Hinge loss | $$L_{D}=E[\operatorname{relu}(1-D(x))]+E[\operatorname{relu}(1+D(G(z)))]$$ |
-|            | $$-E[D(G(z))]$$ |
+|            | $$L_{G}=-E[D(G(z))]$$ |
 
 
 ### 2.12: Spectral normalization
@@ -160,7 +162,7 @@ For the IPM loss family like WGAN, there's a K-Lipschitz constraint, which is de
 
 Progressive training strategy[8], train first small size or coarse image, and step-by-step go to fine level.
 
-## 03: References
+## References
 
 [1] Goodfellow, Ian, et al. "Generative adversarial nets." Advances in neural information processing systems. 2014.
 
