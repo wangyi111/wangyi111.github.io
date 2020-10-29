@@ -10,7 +10,7 @@ toc_label: "CONTENT"
 
 ## 01: GAN's problem
 
-Generally, GAN is a minimax problem:
+Generally, GAN is a minimax problem[1]:
 
 $$
 \operatorname{minmax}_{C}[D, G)=\mathbb{E}_{\mathbf{x} \sim P_{r}(\mathbf{x})}[\log D(\mathbf{x})]+\mathbb{E}_{\mathbf{z} \sim P_{\mathbf{z}}(\mathbf{z})}[\log (1-D(G(\mathbf{z})))]
@@ -86,7 +86,7 @@ Due to the problems above, GAN's training is usually very difficult to adjust. F
 
 ### 2.1: Model choice
 
-If no knowledge about model choice, choose DCGAN or ResNet as base model.
+If no knowledge about model choice, choose DCGAN[2] or ResNet[3] as base model.
 
 ### 2.2: Input
 
@@ -98,21 +98,21 @@ Use 1x1 or 3x3 convolution with 1 or 3 channels as output layer, a suggested act
 
 ### 2.4: Decoder
 
-Choose upsample + conv2d instead of conv2dTranspose to avoid checkboard artifact. Use pixelshuffle for super-resolution task. Use gated-conv2d for image repairing task.
+Choose upsample + conv2d instead of conv2dTranspose to avoid checkboard artifact. Use pixelshuffle[4] for super-resolution task. Use gated-conv2d[5] for image repairing task.
 
 ### 2.5: Normalization
 
-Batch normalization is good for encoder (feature extraction), but for decoder (generation task) suggest using other methods: instance normalization, layer normalization for parameterized methods and pixel normalization for non-parameterized methods. If you don't know which to use, there's a switchable normalization which combines all methods.
+Batch normalization is good for encoder (feature extraction), but for decoder (generation task) suggest using other methods: instance normalization[6], layer normalization[7] for parameterized methods and pixel normalization[8] for non-parameterized methods. If you don't know which to use, there's a switchable normalization[9] which combines all methods.
 
 ### 2.6: Discriminator
 
-If you want to generate high-resolution image, use multi-stage discriminator: maxpool input image to different scales and input to 3 discrimators (same structure but different net parameters).
+If you want to generate high-resolution image, use multi-stage discriminator[8]: maxpool input image to different scales and input to 3 discrimators (same structure but different net parameters).
 
-For diversity of generated image, use mini-batch discriminator (learn the similarity of generated samples); in PGGAN, calculate the statistics of feature maps as additional feature channel.
+For diversity of generated image, use mini-batch discriminator[10] (learn the similarity of generated samples); in PGGAN[11], calculate the statistics of feature maps as additional feature channel.
 
 ### 2.7: Label smoothing
 
-Smooth the label of real samples to randomly 0.9-1.1 and keep fake samples same as 0.0, this could improve the stability of GAN training.
+Smooth the label of real samples to randomly 0.9-1.1 and keep fake samples same as 0.0, this could improve the stability of GAN training[10].
 
 ### 2.8: Instance noise
 
@@ -120,23 +120,23 @@ Add noise to real and fake samples to manually expand the two distributions, thu
 
 ### 2.9: TTUR
 
-Update D for several times and then update G; or set different learning rates for D and G to manually adjust their balance.
+Update D for several times and then update G; or set different learning rates for D and G to manually adjust their balance[12].
 
 ### 2.10: Exponential Moving Average
 
-Apply moving average to history parameters to stabilize the training.
+Apply moving average to history parameters to stabilize the training[13].
 
 ### 2.11: GAN loss
 
-There are two family of losses: f-dviergence (including KL, JS divergence, etc.) and Integral Probability Metric (IPM). For the second family, the network learns the distance (or the effor to move one distribution to the other) between real and fake samples. A famous WGAN uses Wasserstein distance (earth-mover distance) which solves the gradient vanishing and mode collapse problem at the same time with a simple implementation:
+There are two family of losses: f-dviergence (including KL, JS divergence, etc.) and Integral Probability Metric (IPM). For the second family, the network learns the distance (or the effor to move one distribution to the other) between real and fake samples. A famous WGAN[14] uses Wasserstein distance (earth-mover distance) which solves the gradient vanishing and mode collapse problem at the same time with a simple implementation:
 * remove sigmoid from the last layer of Discriminator
 * don't use log for G and D losses
 * each time after updating network weights, clip them into a fixed constant range
 * don't use momentum based optimizer (e.g. Adam), use RMSProp or SGD
 
-Another advantage of WGAN is it can give us a clear metric to judge the network's improvement (the smaller the W-distance, the better the generated result). However, in reality the clipped weights would go closer to the up/low boundary of the clipping range, which is later improved with WGAN-GP with gradient penalty.
+Another advantage of WGAN is it can give us a clear metric to judge the network's improvement (the smaller the W-distance, the better the generated result). However, in reality the clipped weights would go closer to the up/low boundary of the clipping range, which is later improved with WGAN-GP[15] with gradient penalty.
 
-Some other GAN losses like LeastSquare and Hinge loss are also useful, and other auxiliary losses like L1, total variation, style, perception are helpful with combination of GAN loss.
+Some other GAN losses like LeastSquare[16] and Hinge loss[17,18] are also useful, and other auxiliary losses like L1, total variation[19], style[20], perception[19] are helpful with combination of GAN loss.
 
 | Type | formula |
 | ---- | ------- |
@@ -154,15 +154,63 @@ Some other GAN losses like LeastSquare and Hinge loss are also useful, and other
 
 ### 2.12: Spectral normalization
 
-For the IPM loss family like WGAN, there's a K-Lipschitz constraint, which is dealt by clipping weights in WGAN. Reasearches later develop another method called spectral normalization for solving this constraint, which is usually better than WGAN-GP.
+For the IPM loss family like WGAN, there's a K-Lipschitz constraint, which is dealt by clipping weights in WGAN. Reasearches later develop another method called spectral normalization[21] for solving this constraint, which is usually better than WGAN-GP.
 
 ### 2.13: PGGAN and coarse-to-fine
 
-Progressive training strategy, train first small size or coarse image, and step-by-step go to fine level.
+Progressive training strategy[8], train first small size or coarse image, and step-by-step go to fine level.
 
 ## 03: References
 
-(to be completed.)
+[1] Goodfellow, Ian, et al. "Generative adversarial nets." Advances in neural information processing systems. 2014.
+
+[2] Radford, Alec et al. “Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks.” CoRR abs/1511.06434 (2016)
+
+[3] He, Kaiming et al. “Deep Residual Learning for Image Recognition.” 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR) (2016)
+
+[4] Shi, Wenzhe et al. “Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network.” 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR) (2016)
+
+[5] Yu, Jiahui et al. “Free-Form Image Inpainting with Gated Convolution.” CoRRabs/1806.03589 (2018)
+
+[6] Ulyanov, Dmitry et al. “Instance Normalization: The Missing Ingredient for Fast Stylization.” CoRR abs/1607.08022 (2016)
+
+[7] Ba, Jimmy et al. “Layer Normalization.” CoRR abs/1607.06450 (2016)
+
+[8] Karras, Tero et al. “Progressive Growing of GANs for Improved Quality, Stability, and Variation.” CoRR abs/1710.10196 (2018)
+
+[9] Luo, Ping et al. “Differentiable Learning-to-Normalize via Switchable Normalization.” CoRRabs/1806.10779 (2018)
+
+[10] Salimans, Tim et al. “Improved Techniques for Training GANs.” NIPS (2016)
+
+[11] Demir, Ugur, and Gozde Unal. "Patch-based image inpainting with generative adversarial networks." arXiv preprint arXiv:1803.07422 (2018).
+
+[12] Heusel, Martin et al. “GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium.” NIPS (2017)
+
+[13] Yazici, Yasin et al. “The Unusual Effectiveness of Averaging in GAN Training.” CoRRabs/1806.04498 (2018)
+
+
+
+[14] Arjovsky, Martín et al. “Wasserstein GAN.” CoRR abs/1701.07875 (2017)
+
+[15] Gulrajani, Ishaan, et al. "Improved training of wasserstein gans." Advances in neural information processing systems. 2017.
+
+[16] Mao, Xudong, et al. "Least squares generative adversarial networks." Proceedings of the IEEE International Conference on Computer Vision. 2017.
+
+[17] Zhang, Han, et al. "Self-attention generative adversarial networks." arXiv preprint arXiv:1805.08318 (2018)
+
+[18] Brock, Andrew, Jeff Donahue, and Karen Simonyan. "Large scale gan training for high fidelity natural image synthesis." arXiv preprint arXiv:1809.11096 (2018).
+
+[19] Johnson, Justin et al. “Perceptual Losses for Real-Time Style Transfer and Super-Resolution.” ECCV (2016)
+
+[20] Liu, Guilin et al. “Image Inpainting for Irregular Holes Using Partial Convolutions.” ECCV(2018).
+
+[21] Yoshida, Yuichi and Takeru Miyato. “Spectral Norm Regularization for Improving the Generalizability of Deep Learning.” CoRR abs/1705.10941 (2017)
+
+[22] Gui, Jie, et al. "A review on generative adversarial networks: Algorithms, theory, and applications." arXiv preprint arXiv:2001.06937 (2020).
+
+[23] https://www.chainnews.com/articles/042578835630.htm
+
+
 
 
 
