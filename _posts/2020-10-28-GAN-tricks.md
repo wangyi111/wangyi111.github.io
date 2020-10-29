@@ -8,7 +8,7 @@ toc: true
 toc_label: "CONTENT"
 ---
 
-In this blog, we make a brief summary of original GAN's problems and introduce several methods to improve training.
+In this blog, we make a brief summary of original GAN's problems and introduce several methods to improve training. Most of the contents refer to blog [23] and GAN's overview paper [22].
 
 ## 01: GAN's problem
 
