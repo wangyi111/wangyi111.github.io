@@ -22,7 +22,7 @@ subtitle                 : "You Only Live Once." # site tagline that appears bel
 name                     : "Yi Wang"
 description              : "An amazing website."
 url                      : "https://wangyi111.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
+# baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "wangyi111/wangyi111.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
@@ -142,7 +142,8 @@ footer:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url:
-
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin-in"
 
 # Reading Files
 include:
