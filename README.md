@@ -2,4 +2,4 @@ This is my personal site based on jekyll theme [minimal-mistakes](https://mmista
 
 English page: https://wangyi111.github.io/
 
-Chinese page: https://wangyi111.github.io/zh-pages/
+中文站点: https://wangyi111.github.io/zh-pages/

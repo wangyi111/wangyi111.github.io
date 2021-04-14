@@ -9,7 +9,7 @@ main:
   - title: "Project"
     url: /portfolio/
   - title: "CV"
-    url: /assets/cv-yi.pdf
+    url: /cv/ #/assets/cv-yi.pdf
   - title: "中文"
     url: https://wangyi111.github.io/zh-pages/
   #- title: "Quick-Start Guide"

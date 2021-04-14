@@ -27,9 +27,9 @@ Work experience
   
 Interests
 -----
-* Computer Vision & Machine Learning
-* Remote Sensing & Photogrammetry
-* Generative Models
+* Remote Sensing & Earth Observation
+* Computer Vision & Photogrammetry
+* Weakly supervised Machine Learning
 * SLAM & Navigation
 
 Publications
