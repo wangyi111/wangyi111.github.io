@@ -95,7 +95,7 @@ analytics:
 author:
   name             : "Yi Wang"
   avatar           : "/assets/images/bio-yi-th.jpg"
-  bio              : "PhD Candidate at DLR & TUM"
+  bio              : "PhD Candidate at TUM"
   location         : "Munich, Germany"
   email            : 
   links:
@@ -119,7 +119,7 @@ author:
       # url: "https://instagram.com/"
     - label: goolescholar
       icon: "fas fa-fw fa-graduation-cap"
-      # url: "https://scholar.google.com/this-is-a-test"
+      url: "https://scholar.google.com/citations?user=rEADuMEAAAAJ&hl=en"
 
 # Site Footer
 footer:
