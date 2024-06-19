@@ -10,15 +10,15 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
+theme                  : "minimal-mistakes-jekyll"
+# remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "Yi's site"
 title_separator          : "-"
-subtitle                 : "You Only Live Once." # site tagline that appears below site title in masthead
+subtitle                 : "You Only Live Once.🍻" # ㋡ ツ ッ  🏔 🌏 🏂 site tagline that appears below site title in masthead
 name                     : "Yi Wang"
 description              : "An amazing website."
 url                      : "https://wangyi111.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
@@ -101,7 +101,8 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:wangyistutt@gmail.com"
+      url: "mailto:yi4.wang@tum.de"
+      # url: "mailto:wangyistutt@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -117,7 +118,7 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-    - label: goolescholar
+    - label: GooleScholar
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=rEADuMEAAAAJ&hl=en"
 

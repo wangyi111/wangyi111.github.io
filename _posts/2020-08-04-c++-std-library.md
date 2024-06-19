@@ -1,5 +1,5 @@
 ---
-title: 'c++标准库常用数据结构和算法（转）'
+title: 'c++标准库常用数据结构和算法（转，自用备份）'
 permalink: /posts/2020/08/c++-std-library/
 categories: programming
 tags:

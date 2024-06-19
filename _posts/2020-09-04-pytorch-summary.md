@@ -1,5 +1,5 @@
 ---
-title: 'Pytorch: Brief Summary'
+title: 'Pytorch: 简单总结'
 permalink: /posts/2020/09/pytorch-summary/
 categories: programming
 tags:
