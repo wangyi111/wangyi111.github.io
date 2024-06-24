@@ -8,7 +8,7 @@ classes: wide
 
 Welcome to my home page ㋡! I am a PhD candidate at [Technical University of Munich (TUM)](https://www.tum.de/) under the supervision of [Prof. Xiaoxiang Zhu](https://www.lrg.tum.de/sipeo/team/zhu/) and [Dr. Conrad M Albrecht](https://conrad-m-albrecht.github.io/). My doctoral research focuses on self-/weakly-supervised machine learning techniques and their applications in remote sensing and Earth observation, especially in multimodal scenarios.
 
-I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.de/), and my bachelor's degree at [Wuhan University](https://www.whu.edu.cn/). I come from Huai'an, a historical and cultural city in Jiangsu, east coast of China. I enjoy challenges and adventures, currently very interested in exploring the Alps through hiking and snowboarding🏂.
+I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.de/), and my bachelor's degree at [Wuhan University](https://www.whu.edu.cn/). I come from Huai'an, a historical and cultural city in Jiangsu, east coast of China. I enjoy challenges and adventures, currently addicted to exploring the Alps through hiking and snowboarding🏂.
 
 
 ## Selected Publications

@@ -10,7 +10,6 @@ classes: wide
 ***Yi Wang**, Conrad M Albrecht, Xiao Xiang Zhu* \
 `pretraining`, `self-supervised learning`, `weakly-supervised learning`, `multimodal`, `Sentinel-1/2`
 
-
 [On the Foundations of Earth and Climate Foundation Models](https://arxiv.org/abs/2405.04285), Arxiv 2024. \
 *Xiao Xiang Zhu, Zhitong Xiong, **Yi Wang**, Adam J Stewart, Konrad Heidler, Yuanyuan Wang, Zhenghang Yuan, Thomas Dujardin, Qingsong Xu, Yilei Shi* \
 `survey`, `perspective`
@@ -19,11 +18,15 @@ classes: wide
 *Zhitong Xiong, **Yi Wang**, Fahong Zhang, Adam J Stewart, Joëlle Hanna, Damian Borth, Ioannis Papoutsis, Bertrand Le Saux, Gustau Camps-Valls, Xiao Xiang Zhu* \
 `pretraining`, `self-supervised learning`, `multimodal`, `NAIP/Sentinel-1&2/GaoFen/EnMAP`
 
-[CromSS: Cross-modal pre-training with noisy labels for remote sensing image segmentation](https://arxiv.org/abs/2405.01217), ICLR 2024 ML4RS Workshop. \
+[One for All: Toward Unified Foundation Models for Earth Vision](https://arxiv.org/abs/2401.07527), IGARSS 2024. \
+*Zhitong Xiong, **Yi Wang**, Fahong Zhang, Xiao Xiang Zhu* \
+`pretraining`, `self-supervised learning`, `multimodal`, `NAIP/Sentinel-1&2/GaoFen/EnMAP`
+
+[Task Specific Pretraining with Noisy Labels for Remote sensing Image Segmentation](https://arxiv.org/abs/2402.16164), IGARSS 2024. \
 *Chenying Liu, Conrad Albrecht, **Yi Wang**, Xiao Xiang Zhu* \
 `pretraining`, `weakly-supervised learning`, `noisy label`
 
-[Task Specific Pretraining with Noisy Labels for Remote sensing Image Segmentation](https://arxiv.org/abs/2402.16164), IGARSS 2024. \
+[CromSS: Cross-modal pre-training with noisy labels for remote sensing image segmentation](https://arxiv.org/abs/2405.01217), ICLR 2024 ML4RS Workshop. \
 *Chenying Liu, Conrad Albrecht, **Yi Wang**, Xiao Xiang Zhu* \
 `pretraining`, `weakly-supervised learning`, `noisy label`
 
@@ -35,10 +38,6 @@ classes: wide
 *Yao Sun, **Yi Wang**, Michael Eineder* \
 `dataset`, `multimodal`, `buildings`, `Spotlight-SAR/WorldView-3`
 
-[One for All: Toward Unified Foundation Models for Earth Vision](https://arxiv.org/abs/2401.07527) \
-*Zhitong Xiong, **Yi Wang**, Fahong Zhang, Xiao Xiang Zhu* \
-`pretraining`, `self-supervised learning`, `multimodal`, `NAIP/Sentinel-1&2/GaoFen/EnMAP`
-
 [Feature guided masked autoencoder for self-supervised learning in remote sensing](https://arxiv.org/abs/2310.18653), Arxiv 2023. \
 ***Yi Wang**, Hugo Hernández Hernández, Conrad M Albrecht, Xiao Xiang Zhu* \
 `pretraining`, `self-supervised learning`, `multimodal`, `Sentinel-1/2`
@@ -47,6 +46,10 @@ classes: wide
 ***Yi Wang**, Hugo Hernández Hernández, Conrad M Albrecht, Xiao Xiang Zhu* \
 `competition`, `classification`, `aerial`
 
+[DeCUR: decoupling common & unique representations for multimodal self-supervision](https://arxiv.org/abs/2309.05300), Arxiv 2023. \
+***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Chenying Liu, Zhitong Xiong, Xiao Xiang Zhu* \
+`pretraining`, `self-supervised learning`, `multimodal`, ` Sentinel-1&2/Aerial&DEM/RGB&Depth`
+
 [SSL4EO-L: Datasets and foundation models for landsat imagery](https://proceedings.neurips.cc/paper_files/paper/2023/hash/bbf7ee04e2aefec136ecf60e346c2e61-Abstract-Datasets_and_Benchmarks.html), NeurIPS 2023 datasets and benchmarks. \
 *Adam Stewart, Nils Lehmann, Isaac Corley, **Yi Wang**, Yi-Chia Chang, Nassim Ait Ait Ali Braham, Shradha Sehgal, Caleb Robinson, Arindam Banerjee* \
 `pretraining`, `dataset`, `self-supervised learning`, `Landsat`
@@ -54,10 +57,6 @@ classes: wide
 [SSL4EO-S12: A Large-Scale Multi-Modal, Multi-Temporal Dataset for Self-Supervised Learning in Earth Observation](https://arxiv.org/abs/2211.07044), GRSM 2023. \
 ***Yi Wang**, Nassim Ait Ali Braham, Zhitong Xiong, Chenying Liu, Conrad M Albrecht, Xiao Xiang Zhu* \
 `pretraining`, `dataset&benchmark`, `self-supervised learning`, `Sentinel-1/2`
-
-[DeCUR: decoupling common & unique representations for multimodal self-supervision](https://arxiv.org/abs/2309.05300), Arxiv 2023. \
-***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Chenying Liu, Zhitong Xiong, Xiao Xiang Zhu* \
-`pretraining`, `self-supervised learning`, `multimodal`, ` Sentinel-1&2/Aerial&DEM/RGB&Depth`
 
 [Automatic Detection of Building Displacements Through Unsupervised Learning From InSAR Data](https://ieeexplore.ieee.org/abstract/document/10188664/), JSTARS 2023. \
 *Rıdvan Salih Kuzu, Leonardo Bagaglini, **Yi Wang**, Corneliu Octavian Dumitru, Nassim Ait Ali Braham, Giorgio Pasquali, Filippo Santarelli, Francesco Trillo, Sudipan Saha, Xiao Xiang Zhu* \
