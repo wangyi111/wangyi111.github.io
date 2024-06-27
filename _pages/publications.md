@@ -43,12 +43,12 @@ classes: wide
 `pretraining`, `self-supervised learning`, `multimodal`, `Sentinel-1/2`
 
 [Boosting High Resolution Image Classification with Scaling-up Transformers: Second Place Solution of the CVPPA2023 Deep Nutrient Deficiency Challenge](https://arxiv.org/abs/2309.15277), Arxiv 2023. \
-***Yi Wang**, Hugo Hernández Hernández, Conrad M Albrecht, Xiao Xiang Zhu* \
+***Yi Wang*** \
 `competition`, `classification`, `aerial`
 
 [DeCUR: decoupling common & unique representations for multimodal self-supervision](https://arxiv.org/abs/2309.05300), Arxiv 2023. \
 ***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Chenying Liu, Zhitong Xiong, Xiao Xiang Zhu* \
-`pretraining`, `self-supervised learning`, `multimodal`, ` Sentinel-1&2/Aerial&DEM/RGB&Depth`
+`pretraining`, `self-supervised learning`, `multimodal`, `Sentinel-1&2/Aerial&DEM/RGB&Depth`
 
 [SSL4EO-L: Datasets and foundation models for landsat imagery](https://proceedings.neurips.cc/paper_files/paper/2023/hash/bbf7ee04e2aefec136ecf60e346c2e61-Abstract-Datasets_and_Benchmarks.html), NeurIPS 2023 datasets and benchmarks. \
 *Adam Stewart, Nils Lehmann, Isaac Corley, **Yi Wang**, Yi-Chia Chang, Nassim Ait Ait Ali Braham, Shradha Sehgal, Caleb Robinson, Arindam Banerjee* \

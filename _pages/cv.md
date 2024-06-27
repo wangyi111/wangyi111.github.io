@@ -14,23 +14,23 @@ Education Background
 
 Work Experiences
 -----
-* 2024/04-present: Research Assistant
+* 2024/04-present: Research Associate
   * Data Science in Earth Observation, Technical University of Munich (TUM)
   * Project: Copernicus foundation models for a thinking Earth (Horizon Europe)
 
-* 2021/04-2024/03: Research Assistant
+* 2021/04-2024/03: Research Associate
   * Remote Sensing Technology Institute, German Aerospace Center (DLR)
   * Project: Self-/weakly-supervised learning for Earth observation (Helmholtz AI)
 
-* 2020/10-2021/03:  Student Research Assistant
+* 2020/10-2021/03: Student Research Assistant
   * Remote Sensing Technology Institute, German Aerospace Center (DLR)
   * Project: Machine-learned 3D building vectorization
 
-* 2020/04-2020/07:  Intern
+* 2020/04-2020/07: Intern
   * Perception System Group, Stuttgart Technology Center, Sony Europe
   * Project: Radar based SLAM
 
-* 2019/11-2020/02:  Student Research Assistant
+* 2019/11-2020/02: Student Research Assistant
   * Institute for Navigation, University of Stuttgart
   * Project: GNSS software
 
