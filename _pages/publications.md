@@ -30,35 +30,35 @@ classes: wide
 *Chenying Liu, Conrad Albrecht, **Yi Wang**, Xiao Xiang Zhu* \
 `pretraining`, `weakly-supervised learning`, `noisy label`
 
-[AIO2: Online Correction of Object Labels for Deep Learning with Incomplete Annotation in Remote Sensing Image Segmentation](https://arxiv.org/abs/2403.01641), TGRS 2024. \
+[AIO2: Online Correction of Object Labels for Deep Learning with Incomplete Annotation in Remote Sensing Image Segmentation](https://arxiv.org/abs/2403.01641), IEEE TGRS 2024. \
 *Chenying Liu, Conrad M Albrecht, **Yi Wang**, Qingyu Li, Xiao Xiang Zhu* \
 `segmentation`, `weakly-supervised learning`, `noisy label`
 
-[QuickQuakeBuildings: Post-earthquake SAR-Optical Dataset for Quick Damaged-building Detection](https://ieeexplore.ieee.org/abstract/document/10542156), GRSL 2024. \
+[QuickQuakeBuildings: Post-earthquake SAR-Optical Dataset for Quick Damaged-building Detection](https://ieeexplore.ieee.org/abstract/document/10542156), IEEE GRSL 2024. \
 *Yao Sun, **Yi Wang**, Michael Eineder* \
 `dataset`, `multimodal`, `buildings`, `Spotlight-SAR/WorldView-3`
+
+[Decoupling common and unique representations for multimodal self-supervised learning](https://arxiv.org/abs/2309.05300), ECCV 2024. \
+***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Chenying Liu, Zhitong Xiong, Xiao Xiang Zhu* \
+`pretraining`, `self-supervised learning`, `multimodal`, `Sentinel-1&2/Aerial&DEM/RGB&Depth`
 
 [Feature guided masked autoencoder for self-supervised learning in remote sensing](https://arxiv.org/abs/2310.18653), Arxiv 2023. \
 ***Yi Wang**, Hugo Hernández Hernández, Conrad M Albrecht, Xiao Xiang Zhu* \
 `pretraining`, `self-supervised learning`, `multimodal`, `Sentinel-1/2`
 
-[Boosting High Resolution Image Classification with Scaling-up Transformers: Second Place Solution of the CVPPA2023 Deep Nutrient Deficiency Challenge](https://arxiv.org/abs/2309.15277), Arxiv 2023. \
+[Boosting High Resolution Image Classification with Scaling-up Transformers: Second Place Solution of the CVPPA2023 Deep Nutrient Deficiency Challenge](https://arxiv.org/abs/2309.15277), Tech Report 2023. \
 ***Yi Wang*** \
 `competition`, `classification`, `aerial`
-
-[DeCUR: decoupling common & unique representations for multimodal self-supervision](https://arxiv.org/abs/2309.05300), Arxiv 2023. \
-***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Chenying Liu, Zhitong Xiong, Xiao Xiang Zhu* \
-`pretraining`, `self-supervised learning`, `multimodal`, `Sentinel-1&2/Aerial&DEM/RGB&Depth`
 
 [SSL4EO-L: Datasets and foundation models for landsat imagery](https://proceedings.neurips.cc/paper_files/paper/2023/hash/bbf7ee04e2aefec136ecf60e346c2e61-Abstract-Datasets_and_Benchmarks.html), NeurIPS 2023 datasets and benchmarks. \
 *Adam Stewart, Nils Lehmann, Isaac Corley, **Yi Wang**, Yi-Chia Chang, Nassim Ait Ait Ali Braham, Shradha Sehgal, Caleb Robinson, Arindam Banerjee* \
 `pretraining`, `dataset`, `self-supervised learning`, `Landsat`
 
-[SSL4EO-S12: A Large-Scale Multi-Modal, Multi-Temporal Dataset for Self-Supervised Learning in Earth Observation](https://arxiv.org/abs/2211.07044), GRSM 2023. \
+[SSL4EO-S12: A Large-Scale Multi-Modal, Multi-Temporal Dataset for Self-Supervised Learning in Earth Observation](https://arxiv.org/abs/2211.07044), IEEE GRSM 2023. \
 ***Yi Wang**, Nassim Ait Ali Braham, Zhitong Xiong, Chenying Liu, Conrad M Albrecht, Xiao Xiang Zhu* \
 `pretraining`, `dataset&benchmark`, `self-supervised learning`, `Sentinel-1/2`
 
-[Automatic Detection of Building Displacements Through Unsupervised Learning From InSAR Data](https://ieeexplore.ieee.org/abstract/document/10188664/), JSTARS 2023. \
+[Automatic Detection of Building Displacements Through Unsupervised Learning From InSAR Data](https://ieeexplore.ieee.org/abstract/document/10188664/), IEEE JSTARS 2023. \
 *Rıdvan Salih Kuzu, Leonardo Bagaglini, **Yi Wang**, Corneliu Octavian Dumitru, Nassim Ait Ali Braham, Giorgio Pasquali, Filippo Santarelli, Francesco Trillo, Sudipan Saha, Xiao Xiang Zhu* \
 `unsupervised learning`, `anomaly detection`, `time-series`, `building`, `Sentinel-1`
 
@@ -66,11 +66,11 @@ classes: wide
 *Zhitong Xiong, Sining Chen, **Yi Wang**, Lichao Mou, Xiao Xiang Zhu* \
 `dataset&benchmark`, `segmentation`, `multimodal`, `Aerial/DSM`
 
-[Peaks Fusion assisted Early-stopping Strategy for Overhead Imagery Segmentation with Noisy Labels](https://ieeexplore.ieee.org/abstract/document/10020164/), BigData 2022. \
+[Peaks Fusion assisted Early-stopping Strategy for Overhead Imagery Segmentation with Noisy Labels](https://ieeexplore.ieee.org/abstract/document/10020164/), IEEE BigData 2022. \
 *Chenying Liu, Conrad M Albrecht, **Yi Wang**, Xiao Xiang Zhu* \
 `segmentation`, `weakly-supervised learning`, `noisy label`
 
-[Deep Semantic Model Fusion for Ancient Agricultural Terrace Detection](https://ieeexplore.ieee.org/abstract/document/10020329/), BigData 2022. \
+[Deep Semantic Model Fusion for Ancient Agricultural Terrace Detection](https://ieeexplore.ieee.org/abstract/document/10020329/), IEEE BigData 2022. \
 ***Yi Wang**, Chenying Liu, Arti Tiwari, Micha Silver, Arnon Karnieli, Xiao Xiang Zhu, Conrad M Albrecht* \
 `competition`, `segmentation`, `archeology`, `Aerial/DEM`
 
@@ -78,7 +78,7 @@ classes: wide
 *Zhitong Xiong, Fahong Zhang, **Yi Wang**, Yilei Shi, Xiao Xiang Zhu* \
 `survey`, `dataset&benchmarks`, `platform`
 
-[Self-supervised learning in remote sensing: A review](https://arxiv.org/abs/2206.13188), GRSM 2022. \
+[Self-supervised learning in remote sensing: A review](https://arxiv.org/abs/2206.13188), IEEE GRSM 2022. \
 ***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Lichao Mou, Xiao Xiang Zhu* \
 `survey`, `self-supervised learning`
 
