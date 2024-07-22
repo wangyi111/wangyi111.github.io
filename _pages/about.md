@@ -33,11 +33,11 @@ I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.
 
 <div style="clear: both; margin-bottom:10px;"></div>
 
-<img style="float:left;width:30%;box-shadow: 3px 3px 3px gray;margin-right:20px;margin-top: 10px" src="/assets/images/publications/decur.png">
+<img style="float:left;width:30%;box-shadow: 3px 3px 3px gray;margin-right:20px;margin-top: 10px" src="/assets/images/publications/decur_eccv.png">
 
-[DeCUR: decoupling common & unique representations for multimodal self-supervision](https://arxiv.org/abs/2309.05300), Arxiv 2023. [<img src="https://img.shields.io/badge/repo-gray">](https://github.com/zhu-xlab/decur) \
+[Decoupling common and unique representations for multimodal self-supervised learning](https://arxiv.org/abs/2309.05300), ECCV 2024. [<img src="https://img.shields.io/badge/repo-gray">](https://github.com/zhu-xlab/decur) \
 ***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Chenying Liu, Zhitong Xiong, Xiao Xiang Zhu* \
-`modality decoupling + redundancy reduction`, `SAR-MS/RGB-DEM/RGB-Depth`
+`modality decoupling for better multimodal representations`, `SAR-MS/RGB-DEM/RGB-Depth`
 
 <div style="clear: both; margin-bottom:10px;"></div>
 
@@ -45,7 +45,7 @@ I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.
 
 [SSL4EO-S12: A large-scale multimodal, multitemporal dataset for self-supervised learning in Earth observation](https://arxiv.org/abs/2211.07044), GRSM 2023. [<img src="https://img.shields.io/badge/repo-gray">](https://github.com/zhu-xlab/SSL4EO-S12) \
 ***Yi Wang**, Nassim Ait Ali Braham, Zhitong Xiong, Chenying Liu, Conrad M Albrecht, Xiao Xiang Zhu* \
-`dataset&benchmark + in-domain studies`, `SAR/optical`
+`pretraining dataset&benchmark + extended in-domain studies`, `SAR/optical`
 
 <div style="clear: both;margin-bottom:10px;"></div>
 
@@ -53,7 +53,7 @@ I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.
 
 [Self-supervised learning in remote sensing: A review](https://arxiv.org/abs/2206.13188), GRSM 2022. \
 ***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Lichao Mou, Xiao Xiang Zhu* \
-`survey + preliminary in-domain studies`
+`survey of self-supervised learning + preliminary in-domain studies`
 
 <div style="clear: both;margin-bottom:10px;"></div>
 
