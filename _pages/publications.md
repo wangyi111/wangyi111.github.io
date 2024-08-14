@@ -38,7 +38,7 @@ classes: wide
 *Yao Sun, **Yi Wang**, Michael Eineder* \
 `dataset`, `multimodal`, `buildings`, `Spotlight-SAR/WorldView-3`
 
-[Decoupling common and unique representations for multimodal self-supervised learning](https://arxiv.org/abs/2309.05300), ECCV 2024. \
+[Decoupling common and unique representations for multimodal self-supervised learning](https://arxiv.org/abs/2309.05300), ECCV 2024 (oral). \
 ***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Chenying Liu, Zhitong Xiong, Xiao Xiang Zhu* \
 `pretraining`, `self-supervised learning`, `multimodal`, `Sentinel-1&2/Aerial&DEM/RGB&Depth`
 

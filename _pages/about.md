@@ -35,7 +35,7 @@ I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.
 
 <img style="float:left;width:30%;box-shadow: 3px 3px 3px gray;margin-right:20px;margin-top: 10px" src="/assets/images/publications/decur_eccv.png">
 
-[Decoupling common and unique representations for multimodal self-supervised learning](https://arxiv.org/abs/2309.05300), ECCV 2024. [<img src="https://img.shields.io/badge/repo-gray">](https://github.com/zhu-xlab/decur) \
+[Decoupling common and unique representations for multimodal self-supervised learning](https://arxiv.org/abs/2309.05300), ECCV 2024 (oral). [<img src="https://img.shields.io/badge/repo-gray">](https://github.com/zhu-xlab/decur) \
 ***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Chenying Liu, Zhitong Xiong, Xiao Xiang Zhu* \
 `modality decoupling for better multimodal representations`, `SAR-MS/RGB-DEM/RGB-Depth`
 
@@ -43,7 +43,7 @@ I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.
 
 <img style="float:left;width:30%;box-shadow: 3px 3px 3px gray;margin-right:20px; margin-top:10px;" src="/assets/images/publications/ssl4eo-s12.png">
 
-[SSL4EO-S12: A large-scale multimodal, multitemporal dataset for self-supervised learning in Earth observation](https://arxiv.org/abs/2211.07044), GRSM 2023. [<img src="https://img.shields.io/badge/repo-gray">](https://github.com/zhu-xlab/SSL4EO-S12) \
+[SSL4EO-S12: A large-scale multimodal, multitemporal dataset for self-supervised learning in Earth observation](https://arxiv.org/abs/2211.07044), IEEE GRSM 2023. [<img src="https://img.shields.io/badge/repo-gray">](https://github.com/zhu-xlab/SSL4EO-S12) \
 ***Yi Wang**, Nassim Ait Ali Braham, Zhitong Xiong, Chenying Liu, Conrad M Albrecht, Xiao Xiang Zhu* \
 `pretraining dataset&benchmark + extended in-domain studies`, `SAR/optical`
 
@@ -51,7 +51,7 @@ I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.
 
 <img style="float:left;width:30%;box-shadow: 3px 3px 3px gray;margin-right:20px;margin-top:10px;" src="/assets/images/publications/ssl4eo-review.png">
 
-[Self-supervised learning in remote sensing: A review](https://arxiv.org/abs/2206.13188), GRSM 2022. \
+[Self-supervised learning in remote sensing: A review](https://arxiv.org/abs/2206.13188), IEEE GRSM 2022. \
 ***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Lichao Mou, Xiao Xiang Zhu* \
 `survey of self-supervised learning + preliminary in-domain studies`
 
