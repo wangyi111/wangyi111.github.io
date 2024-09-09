@@ -6,7 +6,7 @@ permalink: /publications/
 classes: wide
 ---
 
-[Multi-Label Guided Soft Contrastive Learning for Efficient Earth Observation Pretraining](https://arxiv.org/abs/2405.20462), Arxiv 2024. \
+[Multi-Label Guided Soft Contrastive Learning for Efficient Earth Observation Pretraining](https://arxiv.org/abs/2405.20462), IEEE TGRS 2024. \
 ***Yi Wang**, Conrad M Albrecht, Xiao Xiang Zhu* \
 `pretraining`, `self-supervised learning`, `weakly-supervised learning`, `multimodal`, `Sentinel-1/2`
 
@@ -17,6 +17,10 @@ classes: wide
 [Neural Plasticity-Inspired Foundation Model for Observing the Earth Crossing Modalities](https://arxiv.org/abs/2403.15356), Arxiv 2024. \
 *Zhitong Xiong, **Yi Wang**, Fahong Zhang, Adam J Stewart, Joëlle Hanna, Damian Borth, Ioannis Papoutsis, Bertrand Le Saux, Gustau Camps-Valls, Xiao Xiang Zhu* \
 `pretraining`, `self-supervised learning`, `multimodal`, `NAIP/Sentinel-1&2/GaoFen/EnMAP`
+
+[Decoupling common and unique representations for multimodal self-supervised learning](https://arxiv.org/abs/2309.05300), ECCV 2024 (oral). \
+***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Chenying Liu, Zhitong Xiong, Xiao Xiang Zhu* \
+`pretraining`, `self-supervised learning`, `multimodal`, `Sentinel-1&2/Aerial&DEM/RGB&Depth`
 
 [One for All: Toward Unified Foundation Models for Earth Vision](https://arxiv.org/abs/2401.07527), IGARSS 2024. \
 *Zhitong Xiong, **Yi Wang**, Fahong Zhang, Xiao Xiang Zhu* \
@@ -37,10 +41,6 @@ classes: wide
 [QuickQuakeBuildings: Post-earthquake SAR-Optical Dataset for Quick Damaged-building Detection](https://ieeexplore.ieee.org/abstract/document/10542156), IEEE GRSL 2024. \
 *Yao Sun, **Yi Wang**, Michael Eineder* \
 `dataset`, `multimodal`, `buildings`, `Spotlight-SAR/WorldView-3`
-
-[Decoupling common and unique representations for multimodal self-supervised learning](https://arxiv.org/abs/2309.05300), ECCV 2024 (oral). \
-***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Chenying Liu, Zhitong Xiong, Xiao Xiang Zhu* \
-`pretraining`, `self-supervised learning`, `multimodal`, `Sentinel-1&2/Aerial&DEM/RGB&Depth`
 
 [Feature guided masked autoencoder for self-supervised learning in remote sensing](https://arxiv.org/abs/2310.18653), Arxiv 2023. \
 ***Yi Wang**, Hugo Hernández Hernández, Conrad M Albrecht, Xiao Xiang Zhu* \
@@ -74,7 +74,7 @@ classes: wide
 ***Yi Wang**, Chenying Liu, Arti Tiwari, Micha Silver, Arnon Karnieli, Xiao Xiang Zhu, Conrad M Albrecht* \
 `competition`, `segmentation`, `archeology`, `Aerial/DEM`
 
-[Earthnets: Empowering ai in earth observation](https://arxiv.org/abs/2210.04936), Arxiv 2022. \
+[Earthnets: Empowering ai in earth observation](https://arxiv.org/abs/2210.04936), IEEE GRSM 2024. \
 *Zhitong Xiong, Fahong Zhang, **Yi Wang**, Yilei Shi, Xiao Xiang Zhu* \
 `survey`, `dataset&benchmarks`, `platform`
 

@@ -118,7 +118,7 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
-    - label: GooleScholar
+    - label: GoogleScholar
       icon: "fas fa-fw fa-graduation-cap"
       url: "https://scholar.google.com/citations?user=rEADuMEAAAAJ&hl=en"
 

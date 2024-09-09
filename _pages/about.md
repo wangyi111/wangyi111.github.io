@@ -16,7 +16,7 @@ I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.
 
 <img style="float:left;width:30%;box-shadow: 3px 3px 3px gray;margin-right:20px;margin-top:10px;" src="/assets/images/publications/softcon.png">
 
-[Multi-Label Guided Soft Contrastive Learning for Efficient Earth Observation Pretraining](https://arxiv.org/abs/2405.20462), Arxiv 2024. [<img src="https://img.shields.io/badge/repo-gray">](https://github.com/zhu-xlab/softcon) \
+[Multi-Label Guided Soft Contrastive Learning for Efficient Earth Observation Pretraining](https://arxiv.org/abs/2405.20462), IEEE TGRS 2024. [<img src="https://img.shields.io/badge/repo-gray">](https://github.com/zhu-xlab/softcon) \
 ***Yi Wang**, Conrad M Albrecht, Xiao Xiang Zhu* \
 `soft contrastive learning + continual pretraining`, `SAR/optical` 
 
