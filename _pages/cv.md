@@ -40,10 +40,11 @@ Awards
 
 Interests
 -----
+* Self-/weakly-supervised learning
+* Multimodal representation learning
 * Remote Sensing & Earth Observation
+* Machine Learning & Computer Vision
 * SLAM & Navigation
-* Computer Vision
-* Machine Learning
 
 
   
