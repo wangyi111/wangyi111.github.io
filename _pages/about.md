@@ -11,8 +11,25 @@ Welcome to my home page ㋡! I am a PhD candidate at [Technical University of Mu
 I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.de/), and my bachelor's degree at [Wuhan University](https://www.whu.edu.cn/). I come from Huai'an, a historical and cultural city in Jiangsu, east coast of China. I enjoy challenges and adventures, currently addicted to exploring the Alps through hiking and snowboarding🏂.
 
 
+<div style="background-color:#f9f9f9; border-left:4px solid #ccc; padding:10px 15px; margin:30px 0; font-size:90%; box-shadow: 1px 1px 3px rgba(0,0,0,0.05);">
+News:
+
+- <strong>[2025-06]</strong> Our paper *"[Towards a Unified Copernicus Foundation Model for Earth Vision](https://arxiv.org/abs/2503.11849)"* has been accepted to ICCV 2025.
+- <strong>[2025-06]</strong> Our paper *"[Panopticon: Advancing Any-Sensor Foundation Models for Earth Observation](https://openaccess.thecvf.com/content/CVPR2025W/EarthVision/html/Waldmann_Panopticon_Advancing_Any-Sensor_Foundation_Models_for_Earth_Observation_CVPRW_2025_paper.html)"* received the Best Paper Award at CVPR 2025 Earth Vision Workshop.
+
+</div>
+
+
 ## Selected Publications
 
+<img style="float:left;width:30%;box-shadow: 3px 3px 3px gray;margin-right:20px;margin-top:10px;" src="/assets/images/publications/copernicusfm.png">
+
+[Towards a Unified Copernicus Foundation Model for Earth Vision](https://arxiv.org/abs/2503.11849), ICCV 2025. [<img src="https://img.shields.io/badge/repo-gray">](https://github.com/zhu-xlab/Copernicus-FM) \
+***Yi Wang**, Zhitong Xiong, Chenying Liu, Adam J. Stewart, Thomas Dujardin, Nikolaos Ioannis Bountos, Angelos Zavras, Franziska Gerken, Ioannis Papoutsis, Laura Leal-Taixé, Xiao Xiang Zhu* \
+`multimodal self-supervised learning`, `spectrum/language guided spectral/variable hypernetwork for any modality`, `Copernicus-Pretrain + Copernicus-FM + Copernicus-Bench` 
+
+
+<div style="clear: both; margin-bottom:10px;"></div>
 
 <img style="float:left;width:30%;box-shadow: 3px 3px 3px gray;margin-right:20px;margin-top:10px;" src="/assets/images/publications/softcon.png">
 
@@ -40,6 +57,16 @@ I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.
 `modality decoupling for better multimodal representations`, `SAR-MS/RGB-DEM/RGB-Depth`
 
 <div style="clear: both; margin-bottom:10px;"></div>
+
+
+<img style="float:left;width:30%;box-shadow: 3px 3px 3px gray;margin-right:20px;margin-top:10px;" src="/assets/images/publications/fgmae-1.png">
+
+[Feature Guided Masked Autoencoder for self-supervised learning in remote sensing](https://arxiv.org/abs/2310.18653), IEEE JSTARS 2023. \
+***Yi Wang**, Hugo Hernández Hernández, Conrad M Albrecht, Xiao Xiang Zhu* \
+`masked image modeling with feature guidance`, `EuroSAT-SAR dataset`, `SAR/optical`
+
+<div style="clear: both;margin-bottom:10px;"></div>
+
 
 <img style="float:left;width:30%;box-shadow: 3px 3px 3px gray;margin-right:20px; margin-top:10px;" src="/assets/images/publications/ssl4eo-s12.png">
 

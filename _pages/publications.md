@@ -6,6 +6,26 @@ permalink: /publications/
 classes: wide
 ---
 
+[GlobalGeoTree: A Multi-Granular Vision-Language Dataset for Global Tree Species Classification](https://arxiv.org/abs/2505.12513), Arxiv 2025. \
+*Yang Mu, Zhitong Xiong, **Yi Wang**, Muhammad Shahzad, Franz Essl, Mark van Kleunen, Xiao Xiang Zhu* \
+`dataset`, `vision-language model`, `tree species`, `multimodal`
+
+[Towards a Unified Copernicus Foundation Model for Earth Vision](https://arxiv.org/abs/2503.11849), ICCV 2025. \
+***Yi Wang**, Zhitong Xiong, Chenying Liu, Adam J. Stewart, Thomas Dujardin, Nikolaos Ioannis Bountos, Angelos Zavras, Franziska Gerken, Ioannis Papoutsis, Laura Leal-Taixé, Xiao Xiang Zhu* \
+`pretraining`, `self-supervised learning`, `Copernicus-Pretrain + Copernicus-FM + Copernicus-Bench`, `multimodal` 
+
+[Geolangbind: Unifying earth observation with agglomerative vision-language foundation models](https://arxiv.org/abs/2503.06312), Arxiv 2025. \
+*Zhitong Xiong, **Yi Wang**, Weikang Yu, Adam J Stewart, Jie Zhao, Nils Lehmann, Thomas Dujardin, Zhenghang Yuan, Pedram Ghamisi, Xiao Xiang Zhu* \
+`pretraining`, `vision-language model`, `multimodal pretraining`, `zero-shot learning`, `multimodal`
+
+[Panopticon: Advancing Any-Sensor Foundation Models for Earth Observation](https://openaccess.thecvf.com/content/CVPR2025W/EarthVision/html/Waldmann_Panopticon_Advancing_Any-Sensor_Foundation_Models_for_Earth_Observation_CVPRW_2025_paper.html), CVPR 2025 EarthVision Workshop (<span style="color:darkorange; font-weight:bold;">best paper</span>). \
+*Leonard Waldmann, Ando Shah, **Yi Wang**, Nils Lehmann, Adam Stewart, Zhitong Xiong, Xiao Xiang Zhu, Stefan Bauer, John Chuang* \
+`pretraining`, `self-supervised learning`, `multimodal`
+
+[SpectralEarth: Training hyperspectral foundation models at scale](https://arxiv.org/abs/2408.08447), Arxiv 2024. \
+*Nassim Ait Ali Braham, Conrad M Albrecht, Julien Mairal, Jocelyn Chanussot, **Yi Wang**, Xiao Xiang Zhu* \
+`pretraining`, `dataset`, `self-supervised learning`, `hyperspectral`
+
 [Multi-Label Guided Soft Contrastive Learning for Efficient Earth Observation Pretraining](https://arxiv.org/abs/2405.20462), IEEE TGRS 2024. \
 ***Yi Wang**, Conrad M Albrecht, Xiao Xiang Zhu* \
 `pretraining`, `self-supervised learning`, `weakly-supervised learning`, `multimodal`, `Sentinel-1/2`
@@ -18,7 +38,7 @@ classes: wide
 *Zhitong Xiong, **Yi Wang**, Fahong Zhang, Adam J Stewart, Joëlle Hanna, Damian Borth, Ioannis Papoutsis, Bertrand Le Saux, Gustau Camps-Valls, Xiao Xiang Zhu* \
 `pretraining`, `self-supervised learning`, `multimodal`, `NAIP/Sentinel-1&2/GaoFen/EnMAP`
 
-[Decoupling common and unique representations for multimodal self-supervised learning](https://arxiv.org/abs/2309.05300), ECCV 2024 (oral). \
+[Decoupling common and unique representations for multimodal self-supervised learning](https://arxiv.org/abs/2309.05300), ECCV 2024 (<span style="color:darkorange; font-weight:bold;">oral</span>). \
 ***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Chenying Liu, Zhitong Xiong, Xiao Xiang Zhu* \
 `pretraining`, `self-supervised learning`, `multimodal`, `Sentinel-1&2/Aerial&DEM/RGB&Depth`
 
@@ -46,7 +66,7 @@ classes: wide
 ***Yi Wang**, Hugo Hernández Hernández, Conrad M Albrecht, Xiao Xiang Zhu* \
 `pretraining`, `self-supervised learning`, `multimodal`, `Sentinel-1/2`
 
-[Boosting High Resolution Image Classification with Scaling-up Transformers: Second Place Solution of the CVPPA2023 Deep Nutrient Deficiency Challenge](https://arxiv.org/abs/2309.15277), Tech Report 2023. \
+[Boosting High Resolution Image Classification with Scaling-up Transformers: Second Place Solution of the CVPPA2023 Deep Nutrient Deficiency Challenge](https://arxiv.org/abs/2309.15277), Tech Report 2023 (<span style="color:darkorange; font-weight:bold;">challenge 2nd place</span>). \
 ***Yi Wang*** \
 `competition`, `classification`, `aerial`
 
@@ -70,7 +90,7 @@ classes: wide
 *Chenying Liu, Conrad M Albrecht, **Yi Wang**, Xiao Xiang Zhu* \
 `segmentation`, `weakly-supervised learning`, `noisy label`
 
-[Deep Semantic Model Fusion for Ancient Agricultural Terrace Detection](https://ieeexplore.ieee.org/abstract/document/10020329/), IEEE BigData 2022. \
+[Deep Semantic Model Fusion for Ancient Agricultural Terrace Detection](https://ieeexplore.ieee.org/abstract/document/10020329/), IEEE BigData 2022 (<span style="color:darkorange; font-weight:bold;">challenge 1st place</span>). \
 ***Yi Wang**, Chenying Liu, Arti Tiwari, Micha Silver, Arnon Karnieli, Xiao Xiang Zhu, Conrad M Albrecht* \
 `competition`, `segmentation`, `archeology`, `Aerial/DEM`
 
