@@ -12,8 +12,10 @@ I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.
 
 <div style="background-color:#f9f9f9; border-left:4px solid #ccc; padding:10px 15px; margin:30px 0; font-size:90%; box-shadow: 1px 1px 3px rgba(0,0,0,0.05);">
 
-- <strong>[2025-06]</strong> Our paper *"[Towards a Unified Copernicus Foundation Model for Earth Vision](https://arxiv.org/abs/2503.11849)"* has been accepted to ICCV 2025.
-- <strong>[2025-06]</strong> Our paper *"[Panopticon: Advancing Any-Sensor Foundation Models for Earth Observation](https://openaccess.thecvf.com/content/CVPR2025W/EarthVision/html/Waldmann_Panopticon_Advancing_Any-Sensor_Foundation_Models_for_Earth_Observation_CVPRW_2025_paper.html)"* received the Best Paper Award at CVPR 2025 Earth Vision Workshop.
+<ul>
+ <li><strong>[2025-06]</strong> Our paper "<em><a href="https://arxiv.org/abs/2503.11849">Towards a Unified Copernicus Foundation Model for Earth Vision</a></em>" has been accepted to ICCV 2025.</li>
+ <li><strong>[2025-06]</strong> Our paper <em><a href="https://openaccess.thecvf.com/content/CVPR2025W/EarthVision/html/Waldmann_Panopticon_Advancing_Any-Sensor_Foundation_Models_for_Earth_Observation_CVPRW_2025_paper.html">Panopticon: Advancing Any-Sensor Foundation Models for Earth Observation</a></em> received the Best Paper Award at CVPR 2025 Earth Vision Workshop.</li>
+</ul>
 
 </div>
 
