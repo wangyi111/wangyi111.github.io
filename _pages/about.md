@@ -10,9 +10,7 @@ Welcome to my home page ㋡! I am a PhD candidate at [Technical University of Mu
 
 I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.de/), and my bachelor's degree at [Wuhan University](https://www.whu.edu.cn/). I come from Huai'an, a historical and cultural city in Jiangsu, east coast of China. I enjoy challenges and adventures, currently addicted to exploring the Alps through hiking and snowboarding🏂.
 
-
 <div style="background-color:#f9f9f9; border-left:4px solid #ccc; padding:10px 15px; margin:30px 0; font-size:90%; box-shadow: 1px 1px 3px rgba(0,0,0,0.05);">
-News:
 
 - <strong>[2025-06]</strong> Our paper *"[Towards a Unified Copernicus Foundation Model for Earth Vision](https://arxiv.org/abs/2503.11849)"* has been accepted to ICCV 2025.
 - <strong>[2025-06]</strong> Our paper *"[Panopticon: Advancing Any-Sensor Foundation Models for Earth Observation](https://openaccess.thecvf.com/content/CVPR2025W/EarthVision/html/Waldmann_Panopticon_Advancing_Any-Sensor_Foundation_Models_for_Earth_Observation_CVPRW_2025_paper.html)"* received the Best Paper Award at CVPR 2025 Earth Vision Workshop.
