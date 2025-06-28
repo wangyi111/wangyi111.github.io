@@ -56,12 +56,12 @@ I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.
 ***Yi Wang**, Conrad M Albrecht, Nassim Ait Ali Braham, Chenying Liu, Zhitong Xiong, Xiao Xiang Zhu* \
 `modality decoupling for better multimodal representations`, `SAR-MS/RGB-DEM/RGB-Depth`
 
-<div style="clear: both; margin-bottom:10px;"></div>
+<div style="clear: both; margin-bottom:5px;"></div>
 
 
 <img style="float:left;width:30%;box-shadow: 3px 3px 3px gray;margin-right:20px;margin-top:10px;" src="/assets/images/publications/fgmae-1.png">
 
-[Feature Guided Masked Autoencoder for self-supervised learning in remote sensing](https://arxiv.org/abs/2310.18653), IEEE JSTARS 2023. \
+[Feature Guided Masked Autoencoder for self-supervised learning in remote sensing](https://arxiv.org/abs/2310.18653), IEEE JSTARS 2023. [<img src="https://img.shields.io/badge/repo-gray">](https://github.com/zhu-xlab/FGMAE) \
 ***Yi Wang**, Hugo Hernández Hernández, Conrad M Albrecht, Xiao Xiang Zhu* \
 `masked image modeling with feature guidance`, `EuroSAT-SAR dataset`, `SAR/optical`
 
@@ -74,7 +74,7 @@ I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.
 ***Yi Wang**, Nassim Ait Ali Braham, Zhitong Xiong, Chenying Liu, Conrad M Albrecht, Xiao Xiang Zhu* \
 `pretraining dataset&benchmark + extended in-domain studies`, `SAR/optical`
 
-<div style="clear: both;margin-bottom:10px;"></div>
+<div style="clear: both;margin-bottom:5px;"></div>
 
 <img style="float:left;width:30%;box-shadow: 3px 3px 3px gray;margin-right:20px;margin-top:10px;" src="/assets/images/publications/ssl4eo-review.png">
 
