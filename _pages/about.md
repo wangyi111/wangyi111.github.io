@@ -28,8 +28,15 @@ I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.
 ***Yi Wang**, Zhitong Xiong, Chenying Liu, Adam J. Stewart, Thomas Dujardin, Nikolaos Ioannis Bountos, Angelos Zavras, Franziska Gerken, Ioannis Papoutsis, Laura Leal-Taixé, Xiao Xiang Zhu* \
 `multimodal self-supervised learning`, `spectrum/language guided spectral/variable hypernetwork for any modality`, `Copernicus-Pretrain + Copernicus-FM + Copernicus-Bench` 
 
+<div style="clear: both; margin-bottom:10px;"></div>
+
+
+[Geolangbind: Unifying earth observation with agglomerative vision-language foundation models](https://arxiv.org/abs/2503.06312), Arxiv 2025. [<img src="https://img.shields.io/badge/repo-gray">](https://github.com/xiong-zhitong/GeoLB-SigLIP) \
+*Zhitong Xiong, **Yi Wang**, Weikang Yu, Adam J Stewart, Jie Zhao, Nils Lehmann, Thomas Dujardin, Zhenghang Yuan, Pedram Ghamisi, Xiao Xiang Zhu* \
+`vision-language model with any spectral sensor`, `SAR/MS/HS/RGB/langauge`
 
 <div style="clear: both; margin-bottom:10px;"></div>
+
 
 <img style="float:left;width:30%;box-shadow: 3px 3px 3px gray;margin-right:20px;margin-top:10px;" src="/assets/images/publications/softcon.png">
 
