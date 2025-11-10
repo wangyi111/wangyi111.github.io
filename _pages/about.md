@@ -25,7 +25,7 @@ I got my master's degree at [University of Stuttgart](https://www.uni-stuttgart.
 
 <img style="float:left;width:30%;box-shadow: 3px 3px 3px gray;margin-right:20px;margin-top:10px;" src="/assets/images/publications/copernicusfm.png">
 
-[Towards a Unified Copernicus Foundation Model for Earth Vision](https://arxiv.org/abs/2503.11849), ICCV 2025 (oral). [<img src="https://img.shields.io/badge/repo-gray">](https://github.com/zhu-xlab/Copernicus-FM) \
+[Towards a Unified Copernicus Foundation Model for Earth Vision](https://arxiv.org/abs/2503.11849), ICCV 2025 (best paper finalist). [<img src="https://img.shields.io/badge/repo-gray">](https://github.com/zhu-xlab/Copernicus-FM) \
 ***Yi Wang**, Zhitong Xiong, Chenying Liu, Adam J. Stewart, Thomas Dujardin, Nikolaos Ioannis Bountos, Angelos Zavras, Franziska Gerken, Ioannis Papoutsis, Laura Leal-Taixé, Xiao Xiang Zhu* \
 `multimodal self-supervised learning`, `spectrum/language guided spectral/variable hypernetwork for any modality`, `Copernicus-Pretrain + Copernicus-FM + Copernicus-Bench` 
 

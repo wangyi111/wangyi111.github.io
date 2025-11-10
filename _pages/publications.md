@@ -10,7 +10,7 @@ classes: wide
 *Yang Mu, Zhitong Xiong, **Yi Wang**, Muhammad Shahzad, Franz Essl, Mark van Kleunen, Xiao Xiang Zhu* \
 `dataset`, `vision-language model`, `tree species`, `multimodal`
 
-[Towards a Unified Copernicus Foundation Model for Earth Vision](https://arxiv.org/abs/2503.11849), ICCV 2025 (<span style="color:darkorange; font-weight:bold;">oral</span>). \
+[Towards a Unified Copernicus Foundation Model for Earth Vision](https://arxiv.org/abs/2503.11849), ICCV 2025 (<span style="color:darkorange; font-weight:bold;">best paper finalist</span>). \
 ***Yi Wang**, Zhitong Xiong, Chenying Liu, Adam J. Stewart, Thomas Dujardin, Nikolaos Ioannis Bountos, Angelos Zavras, Franziska Gerken, Ioannis Papoutsis, Laura Leal-Taixé, Xiao Xiang Zhu* \
 `pretraining`, `self-supervised learning`, `Copernicus-Pretrain + Copernicus-FM + Copernicus-Bench`, `multimodal` 
 
